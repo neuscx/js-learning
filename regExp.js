@@ -23,7 +23,7 @@ function regTestIfPhone(phone) {
     return false;
 }
 function regTestIfMailSimple(mail) {
-    var regTest = new RegExp(".*@\\w*\.\\w*");
+    var regTest = new RegExp("\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*");
     if (regTest.test(mail)) {
         return true;
     }
