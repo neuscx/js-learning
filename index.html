@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>es6-learing</title>
+</head>
+<body>
+<script type="text/javascript">
+function regTestIfMailSimple(mail) {
+    var regTest = new RegExp("\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*");
+    if (regTest.test(mail)) {
+        return true;
+    }
+    return false;
+}
+console.log(regTestIfMailSimple("neuscx@163.com"));
+console.log(regTestIfMailSimple("neuscx"));
+console.log(regTestIfMailSimple("neuscx@163"));
+console.log(regTestIfMailSimple("@163.com"));
+console.log(regTestIfMailSimple("neuscx@163com"));
+console.log(regTestIfMailSimple("neuscx@.com"));
+console.log(regTestIfMailSimple("neuscx@163.com.cn"));
+</script>
+</body>
+</html>
